@@ -6,7 +6,7 @@
     "group": "nautical",
     "data":
  */
-const IS_LOCAL = true;
+const IS_LOCAL = false;
 let datasets = {};
 let groups = [];
 $('.ui.dropdown')
