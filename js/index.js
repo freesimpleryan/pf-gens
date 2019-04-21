@@ -49,11 +49,21 @@ function getJsonAndCreateWidgets(jsonFile){
                 let id = $(this).attr('id').split("_")[1]
                 $("#textDisplay").empty();
                 let thisDataset = datasets[id];
+                $("#textDisplay").append("<h1>"+thisDataset.displayName+"</h1><hr>");
                 if(thisDataset.group != "generator"){
-                    $("#textDisplay").append("<h1>"+thisDataset.displayName+"</h1><hr>");
                     let all_results = thisDataset.data;
                     let randResult = all_results[Math.floor(Math.random() * all_results.length)];
                     $("#textDisplay").append("<p>"+randResult+"</p>");
+                }
+                if(thisDataset.group == "generator"){
+                    let all_results = thisDataset.data;
+                    let result = "";
+                    for(let i = 0; i < Object.keys(all_results).length; i++){
+                        let key = (i+1).toString();
+                        thisResult = all_results[key]
+                        result += thisResult[Math.floor(Math.random() * thisResult.length)] + " ";
+                    }
+                    $("#textDisplay").append("<p>"+result+"</p>");
                 }
             });
         },
