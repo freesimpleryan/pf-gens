@@ -6,6 +6,7 @@
     "group": "nautical",
     "data":
  */
+const IS_LOCAL = true;
 let datasets = {};
 let groups = [];
 $('.ui.dropdown')
@@ -38,7 +39,7 @@ function getJsonAndCreateWidgets(jsonFile){
                 });
             }
             // Handle individual item creation
-            file_name = jsonFile.split("/")[2]
+            file_name = IS_LOCAL ? jsonFile.split("/")[2] : jsonFile.split("/")[3]; 
             let id = file_name.split(".")[0]
             datasets[id] = data;
             let buttonId = "button_"+id;         
@@ -66,13 +67,14 @@ function getJsonAndCreateWidgets(jsonFile){
 
 
 $(document).ready(function(){
-    let MASTER_JSON = "/data/master.json";
+    let MASTER_JSON = IS_LOCAL ? "/data/master.json" : "/pf-gens/data/master.json";
     $.ajax({
         url : MASTER_JSON,
         type : 'GET',
         success : function(data) {              
             for(let i = 0; i < data.data.length; i++){
-                getJsonAndCreateWidgets("/data/"+data.data[i]);
+                jsonpath = IS_LOCAL ? "/data/" : "/pf-gens/data/";
+                getJsonAndCreateWidgets(jsonpath+data.data[i]);
             }
         },
         error : function(request,error)
