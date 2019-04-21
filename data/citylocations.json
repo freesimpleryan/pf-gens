@@ -1,4 +1,7 @@
-{"data": [
+{   "displayName": "City Locations",
+    "toolTip": "Buildings one may find in a city",
+    "group": "urban",
+    "data": [
     
 "Abattoir: slaughterhouse",
 "Abbey: large religious building",

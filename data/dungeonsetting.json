@@ -1,5 +1,7 @@
-{"data": [
-    
+{   "displayName": "Dungeon Location",
+    "toolTip": "Location for a dungeon to provide flavor",
+    "group": "dungeon",
+    "data": [  
 "An underground river ",
 "Within a river dam ",
 "Amid the ruble of a ruined citadel",

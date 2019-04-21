@@ -1,4 +1,7 @@
-{"data": [
+{   "displayName": "Unique Ships",
+    "toolTip": "Unique NPC ships, likely wrecked",
+    "group": "nautical",
+    "data": [
 "The Angry Drake:  a half-sized kobold warship",
 "The Sparrow: a colossal axe lies buried in the hull of this ship ",
 "The Luckless: rotten carcasses litter the beach while broken remnants of this ship wash ashore",

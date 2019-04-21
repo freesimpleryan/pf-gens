@@ -1,5 +1,7 @@
-{"data": [
-    
+{   "displayName": "Unique Islands",
+    "toolTip": "Unique and interesting islands",
+    "group": "nautical",
+    "data": [
 "Island with beaches full of smooth, multi-colored glass pebbles instead of sand",
 "Coral atoll that absorbs sunlight during the day and then glows at night",
 "Reef ruled by warring kingdoms of sentient crabs",

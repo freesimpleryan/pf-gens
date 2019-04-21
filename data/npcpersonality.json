@@ -1,4 +1,7 @@
- {"data": [
+{   "displayName": "Quirks",
+    "toolTip": "NPC Personality Quirks",
+    "group": "npc",
+    "data": [
 "Always agrees (but changes mind just as easily)",
 "Asks how much everything costs",
 "Likes to act mysteriously",

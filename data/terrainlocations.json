@@ -1,5 +1,7 @@
-{"data": [
-      
+{   "displayName": "Regions",
+    "toolTip": "Terrain regions",
+    "group": "outdoors",
+    "data": [ 
 "Antarctic: southerly area of extreme cold",
 "Arctic: northerly area of intense cold",
 "Basin: tract of land drained by a river",

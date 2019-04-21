@@ -1,4 +1,7 @@
-{"data": [
+{   "displayName": "Reward",
+    "toolTip": "Reward an NPC can offer the players",
+    "group": "npc",
+    "data": [
     
 "Wash or mend your clothes and equipment",
 "Perform a skill check for you",

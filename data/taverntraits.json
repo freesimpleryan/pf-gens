@@ -1,4 +1,7 @@
-{"data": [
+{   "displayName": "Tavern Traits",
+    "toolTip": "Create a unique tavern",
+    "group": "urban",
+    "data": [
     
  "Only opens on public holidays",
  

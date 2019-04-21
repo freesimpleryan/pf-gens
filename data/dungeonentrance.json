@@ -1,5 +1,7 @@
-{"data": [
-    
+{   "displayName": "Dungeon Entrance",
+    "toolTip": "Possible entrances to dungeons",
+    "group": "dungeon",
+    "data": [
 "A well",
 "A mineshaft",
 "A rope-bridge between tidal stacks",

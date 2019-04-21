@@ -1,5 +1,7 @@
-{"data": [
-    
+{   "displayName": "Found Things",
+    "toolTip": "Things found in the contryside",
+    "group": "outdoors",
+    "data": [
 "An abandoned cartwheel",
 "A holy man meditating at a roadside shrine",
 "A newly constructed travelers waystation ",

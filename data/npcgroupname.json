@@ -1,4 +1,6 @@
-{
+{   "displayName": "NPC Group Name Generator",
+    "toolTip": "Generates NPC Group names",
+    "group": "generator",
 	"data": {
 		"1": ["Mighty", "Quiet", "Valorous", "Undaunted", "Questioning", "Selfish", "Foolhardy", "Brave", "Noble", "Questing", "Great", "Ignoble", "Pious", "Strong", "Studious", "Incredible", "Stout", "Sturdy", "Unbreakable", "Fearless", "Blinded", "Fearsome", "Potent", "Commanding", "Superior", "Impressive", "Meddling", "Lucky", "Contagious", "Loud", "Holy", "Unholy", "Ascendant", "Gripping", "Fascinating", "Infectious", "Eminent", "Grave", "Compelling", "Hypnotic", "Persuasive", "Irresistible", "Alluring", "Fascinating", "Magnetic", "Predominant", "Magic", "Reputable", "Famous", "Beautiful"],
 		"2": ["Ebon", "Black", "Green", "Blue", "Violet", "Shade", "Shadow", "Pearly", "Blood-red", "Crimson", "Brown", "Ochre", "Bright", "Moonlight", "Shadowy", "Dusky", "Rainbow", "Pitch", "Tar", "Coal", "Nadir", "Mold", "Jade", "Sage", "Amethyst", "Coral", "Tiger Eye", "Obsidian", "Mithral", "Gold", "Silver", "Platinum", "Copper", "Adamantine", "Steel", "Iron", "Forged", "Snow", "Dark", "Light", "Day", "Night", "Deep", "High", "Long", "Gray", "Stone", "Ultramarine", "Mauve", "White"],

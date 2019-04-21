@@ -1,4 +1,7 @@
-{"data": [
+{   "displayName": "Dungeon Type",
+    "toolTip": "Type or theme of a dungeon",
+    "group": "dungeon",
+    "data": [
 "A hedge maze",
 "A riverboat",
 "A wizard™s tomb",

@@ -1,5 +1,7 @@
-{"data": [
-    
+{   "displayName": "Flotsam",
+    "toolTip": "Things found floating in the ocean",
+    "group": "nautical",
+    "data": [
 "An empty raft",
 "A message in a bottle",
 "A ship in a bottle",

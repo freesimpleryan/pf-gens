@@ -1,5 +1,7 @@
-{"data": [
-    
+{   "displayName": "Dungeon Characteristics - Exotic",
+    "toolTip": "Interesting things in a dungeon",
+    "group": "dungeon",
+    "data": [
 "Fresco depicts grisly death of viewer",
 "Filled with the sound of sobbing, coming from a crypt",
 "Carved with faces depicting different alignments",

@@ -1,4 +1,7 @@
-{"data": [
+{   "displayName": "Features",
+    "toolTip": "Interesting terrain",
+    "group": "outdoors",
+    "data": [
     
 "A tumbling waterfall cascades into a deep pond",
 "A bent willow tree provides shelter",

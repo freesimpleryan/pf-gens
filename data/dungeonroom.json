@@ -1,5 +1,7 @@
-{"data": [
-    
+{   "displayName": "Dungeon Rooms",
+    "toolTip": "Common rooms in a dungeon or encounter setting",
+    "group": "dungeon",
+    "data": [
 "Antechamber",
 "Armory",
 "Audience chamber",

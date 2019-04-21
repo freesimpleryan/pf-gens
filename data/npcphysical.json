@@ -1,4 +1,7 @@
-{"data": [
+{   "displayName": "Physical",
+    "toolTip": "NPC Physical descriptions",
+    "group": "npc",
+    "data": [
 "Warts",
 "Bad breath",
 "Big nose",

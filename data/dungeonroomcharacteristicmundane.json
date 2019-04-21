@@ -1,5 +1,7 @@
-{"data": [
-    
+{   "displayName": "Dungeon Characteristics - Common",
+    "toolTip": "Common modifiers for dungeon rooms",
+    "group": "dungeon",
+    "data": [
 "Slopes (up or down)",
 "Dampness on walls/floor",
 "Steady drip from ceiling",

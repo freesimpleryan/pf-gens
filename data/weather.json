@@ -1,5 +1,7 @@
-{"data": [
-    
+{   "displayName": "Weather",
+    "toolTip": "Different weather types",
+    "group": "outdoors",
+    "data": [
 "Balmy: mild and pleasant weather",
 "Blizzard: a dense snowstorm",
 "Bluster: strong wind",

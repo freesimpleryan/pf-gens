@@ -1,5 +1,7 @@
-{"data": [
-    "Goal",
+{   "displayName": "Goals and Motivations",
+    "toolTip": "NPC Motivations",
+    "group": "npc",
+    "data": [
     "Get a good nights sleep",
     "Sire a child",
     "Prove noble heritage",

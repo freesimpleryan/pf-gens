@@ -1,4 +1,7 @@
-{"data": [
+{   "displayName": "Boats",
+    "toolTip": "Different kinds of boats",
+    "group": "nautical",
+    "data": [
     
 "Barge: flat-bottomed freight boat",
 "Barque: large ship with multiple masts",

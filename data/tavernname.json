@@ -1,4 +1,6 @@
-{
+{   "displayName": "Tavern Name",
+    "toolTip": "Generate a tavern nae",
+    "group": "generator",
 	"data": {
 		"1": ["Blind", "Three", "King's", "Black", "Fearsome", "Yew", "Maid", "Green", "Blasted", "Broken", "Meg's", "23", "Donkey", "Five", "Dead", "Jolly", "Brass", "Buxum", "Six", "Pirate's", "Carrots", "Burnt", "Deviant", "Thrice", "Empty", "Fearsome", "Red", "Yellow", "Supine", "Thirsty", "Fat", "Thin", "Burnt", "Queen's", "Captain's", "White", "Murdered", "Large", "Tiny", "Round", "Hollow", "Catapult", "Snail", "Nag's", "Blunt", "Outrageous", "Quiet", "Noisy", "Boozy", "Magenta", "Stork"],
 		"2": ["Cat", "Fire", "with Eight Tails", "Cow", "Spectacles", "Burnt Down", "Minotaur", "Hag", "Nightcap", "Ankheg", "Chamber", "\u00c5\u201924", "Blind Mice", "Ale", "Honey", "Full Moon", "Moon", "Rainbow", "Storm Clouds", "Pipe", "Trousers", "Waif", "Hat", "Helmet", "Kraken", "Giant", "Cockerel", "Slug", "Dryad", "Pig", "Rack", "Iron Maiden", "House", "Barn", "Church", "Well", "Manticore", "Haystack", "Hill", "Ferret", "Lurcher", "Lobster", "Cliff", "Tarragon", "Slippers", "Witch", "Gull", "Caravel", "Wagon", "Carriage", "Moose"]
