@@ -6,12 +6,15 @@ def main():
     # Honestly don't try to get this to work - this is super rigged up
     json_data = {}
     pdf_path = ""
-    page = 99
+    page = 211
     pdfFileObject = open(pdf_path, 'rb')
     pdfReader = PyPDF2.PdfFileReader(pdfFileObject)
     p = pdfReader.getPage(page)
     page_text = p.extractText()
-    ranged_value_regex = "\d{1,2}Œ\d{1,3}"
+    with open("outtext.txt", "w+", encoding='utf-8') as txtfile:
+        txtfile.write(page_text)
+    exit(0)
+    ranged_value_regex = "\d{1,2}\s*Œ\s*\d{1,3}"
     raw_values = re.findall(ranged_value_regex, page_text)
     data = {
         "data": {
@@ -41,8 +44,6 @@ def main():
             d[str(index + 1)].append(word.strip())
     with open("../data/npcgroupnames.json", "w+") as outfile:
         outfile.write(json.dumps(data))
-    """with open("outtext.txt", "w+", encoding='utf-8') as txtfile:
-        txtfile.write(page_text)"""
 
 if __name__ == "__main__":
     main()
