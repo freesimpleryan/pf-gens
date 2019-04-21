@@ -21,7 +21,8 @@ function getJsonAndCreateWidgets(jsonFile){
             let groupComboId = "group"+groupName;
             let groupClass = "groupDisplay"+groupName;
             let divId = "divText"+groupName;
-            let buttonDivId = "divButtons"+groupName;          
+            let buttonDivId = "divButtons"+groupName;
+            // Handle group creation items if needed
             if(groups.indexOf(groupName) < 0){
                 groups.push(groupName);
                 // Add to combobox
@@ -36,8 +37,24 @@ function getJsonAndCreateWidgets(jsonFile){
                     $("."+groupClass).show();
                 });
             }
-            datasets.groupName = data.data;
-            $("#"+buttonDivId).append('<button class="ui button">'+data.displayName+'</button>');
+            // Handle individual item creation
+            file_name = jsonFile.split("/")[2]
+            let id = file_name.split(".")[0]
+            datasets[id] = data;
+            let buttonId = "button_"+id;         
+            $("#"+buttonDivId).append('<div class="ui button" id="'+buttonId+'" data-content="'+data.toolTip+'">'+data.displayName+'</div>');
+            $('.button').popup();
+            $("#"+buttonId).on("click", function(){
+                let id = $(this).attr('id').split("_")[1]
+                $("#textDisplay").empty();
+                let thisDataset = datasets[id];
+                if(thisDataset.group != "generator"){
+                    $("#textDisplay").append("<h1>"+thisDataset.displayName+"</h1><hr>");
+                    let all_results = thisDataset.data;
+                    let randResult = all_results[Math.floor(Math.random() * all_results.length)];
+                    $("#textDisplay").append("<p>"+randResult+"</p>");
+                }
+            });
         },
         error : function(request,error)
         {
