@@ -7,6 +7,7 @@
     "data":
  */
 const IS_LOCAL = false;
+const NPC_BUTTONS_DIV = "divButtonsNpc";
 let datasets = {};
 let groups = [];
 $('.ui.dropdown')
@@ -17,6 +18,7 @@ function getJsonAndCreateWidgets(jsonFile){
     $.ajax({
         url : jsonFile,
         type : 'GET',
+        async: false,
         success : function(data) {
             let groupName = data.group.charAt(0).toUpperCase() + data.group.slice(1);     
             let groupComboId = "group"+groupName;
@@ -75,6 +77,41 @@ function getJsonAndCreateWidgets(jsonFile){
     });
 }
 
+function _appendNpcAllButton(buttonDivId){
+            let id = "npcAll";
+            let tooltip = "Generate all for an NPC";
+            let displayName = "NPC All";
+            let buttonId = "button_"+id;
+            console.log($("#"+buttonDivId).attr("id"));      
+            $("#"+buttonDivId).append('<div class="ui button" id="'+buttonId+'" data-content="'+tooltip+'">'+displayName+'</div>');
+            $('.button').popup();
+            $("#"+buttonId).on("click", function(){
+                let id = $(this).attr('id').split("_")[1]
+                $("#textDisplay").empty();
+                for(var p in datasets){
+                    if(datasets[p].group === "npc"){
+                        console.log(datasets);
+                        let name = datasets[p]["displayName"];
+                        let data = datasets[p]["data"]
+                        let description = data[Math.floor(Math.random() * data.length)]
+                        $("#textDisplay").append("<h1>"+name+"</h1><hr>");
+                        $("#textDisplay").append("<p>"+description+"</p>");
+                    }
+                }
+            });
+}
+
+function appendNpcAllButton(targetDiv){
+    _appendNpcAllButton(targetDiv);
+}
+
+function createAll(data){
+    for(let i = 0; i < data.data.length; i++){
+        jsonpath = IS_LOCAL ? "/data/" : "/pf-gens/data/";
+        getJsonAndCreateWidgets(jsonpath+data.data[i]);
+    }
+    appendNpcAllButton(NPC_BUTTONS_DIV);
+}
 
 $(document).ready(function(){
     let MASTER_JSON = IS_LOCAL ? "/data/master.json" : "/pf-gens/data/master.json";
@@ -82,10 +119,7 @@ $(document).ready(function(){
         url : MASTER_JSON,
         type : 'GET',
         success : function(data) {              
-            for(let i = 0; i < data.data.length; i++){
-                jsonpath = IS_LOCAL ? "/data/" : "/pf-gens/data/";
-                getJsonAndCreateWidgets(jsonpath+data.data[i]);
-            }
+            createAll(data);
         },
         error : function(request,error)
         {
