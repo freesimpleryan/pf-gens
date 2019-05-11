@@ -6,7 +6,7 @@
     "group": "nautical",
     "data":
  */
-const IS_LOCAL = false;
+const IS_LOCAL = true;
 const NPC_BUTTONS_DIV = "divButtonsNpc";
 let datasets = {};
 let groups = [];
@@ -51,7 +51,7 @@ function getJsonAndCreateWidgets(jsonFile){
                 let id = $(this).attr('id').split("_")[1]
                 $("#textDisplay").empty();
                 let thisDataset = datasets[id];
-                $("#textDisplay").append("<h1>"+thisDataset.displayName+"</h1><hr>");
+                $("#textDisplay").append("<h1>"+thisDataset.displayName+'</h1>');
                 if(thisDataset.group != "generator"){
                     let all_results = thisDataset.data;
                     let randResult = all_results[Math.floor(Math.random() * all_results.length)];
@@ -94,7 +94,7 @@ function _appendNpcAllButton(buttonDivId){
                         let name = datasets[p]["displayName"];
                         let data = datasets[p]["data"]
                         let description = data[Math.floor(Math.random() * data.length)]
-                        $("#textDisplay").append("<h1>"+name+"</h1><hr>");
+                        $("#textDisplay").append("<h1>"+name+'</h1>');
                         $("#textDisplay").append("<p>"+description+"</p>");
                     }
                 }
