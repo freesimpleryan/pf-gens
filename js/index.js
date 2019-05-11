@@ -6,7 +6,7 @@
     "group": "nautical",
     "data":
  */
-const IS_LOCAL = true;
+const IS_LOCAL = false;
 const NPC_BUTTONS_DIV = "divButtonsNpc";
 let datasets = {};
 let groups = [];
